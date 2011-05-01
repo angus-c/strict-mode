@@ -7,4 +7,4 @@ For the visual test page open test.html in your browser (you can also click on f
 
 The file tests.js can also be dumped into your developer console - just switch mode to CONSOLE_MODE  
 
-(Note that browser naming is pulled from a utility at git@github.com:angus-c/assortedLameness
+(Note that browser echoing is pulled from a utility at https://github.com/angus-c/assortedLameness/blob/master/browser/echoBrowser.js)
