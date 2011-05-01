@@ -3,6 +3,6 @@ This is the source companion to my article "JavaScript Strict Mode" http://javas
 I've written a test for all ES 5 38 Strict Mode features as defined here
 http://ecma262-5.com/ELS5_HTML.htm#Annex_C
 
-For the visual test page open tests.html in your browser (you can also click on file:///Users/angus/workspace/github/strictMode/src/test.html to run the hosted version)
+For the visual test page open test.html in your browser (you can also click on file:///Users/angus/workspace/github/strictMode/src/test.html to run the hosted version)
 
 The file tests.js can also be dumped into your developer console - just switch mode to CONSOLE_MODE  
