@@ -63,8 +63,11 @@
   }
 
   function finishAll() {
+    var result = ["","(", testsPassed, "out of", totalTests, "tests passed", ")"].join(' ');
     if (mode == HTML_MODE) {
-      banner.innerHTML += ["","(", testsPassed, "out of", totalTests, "tests passed", ")"].join(' ');
+      banner.innerHTML += result;
+    } else if (mode == CONSOLE_MODE) {
+      console.log(result);
     }
   }
 
@@ -80,7 +83,7 @@
 
   // A conforming implementation, when processing strict mode code (see 10.1.1), may not
   //extend the syntax of EscapeSequence to include OctalEscapeSequence as described in B.1.2.
-  testException("no octal escape sequence", '"\012"', SyntaxError);
+  testException("no octal escape sequence", '"\\012"', SyntaxError);
 
   // Assignment to an undeclared identifier or otherwise unresolvable reference does not
   //create a property in the global object. When a simple assignment occurs within strict
