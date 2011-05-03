@@ -235,8 +235,8 @@
   testValue(
     "no global coercion for null",
     getThis,
-    4,
-    {ctx: 4}
+    null,
+    {ctx: null}
   );
 
 
