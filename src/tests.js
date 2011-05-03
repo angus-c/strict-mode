@@ -32,7 +32,8 @@
       'use strict';
       options = options || {};
       startTest(testName);
-      (fn.apply(options.ctx, options.args) === expectedValue) ? finishTest(true) : finishTest(false);
+      var result = (fn.apply(options.ctx, options.args || []) === expectedValue);
+      finishTest(result);
   }
 
   function startTest(testName) {
