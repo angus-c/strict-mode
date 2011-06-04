@@ -7,6 +7,8 @@
   var HTML_MODE = 0;
   var CONSOLE_MODE = 1;
 
+  var POST_URL = "http://javascriptweblog.wordpress.com/2011/05/03/javascript-strict-mode/";
+
   var mode = HTML_MODE;
 
   var banner = document.getElementById('banner');
@@ -67,6 +69,11 @@
     var result = ["","(", testsPassed, "out of", totalTests, "tests passed", ")"].join(' ');
     if (mode == HTML_MODE) {
       banner.innerHTML += result;
+      var linkBack = document.createElement('a');
+      linkBack.href = POST_URL;
+      linkBack.innerHTML = "what is strict mode?";
+      linkBack.target = "_blank";
+      banner.appendChild(linkBack);
     } else if (mode == CONSOLE_MODE) {
       console.log(result);
     }
